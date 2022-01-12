@@ -55,7 +55,7 @@ function getFiles(){
 }
 async function fetchDownloadLink(url , id){
 
-  await fetch("http://v-point.000webhostapp.com/test/AnonFileUpload/api/anonDirectDownloadLink.php?link="+url)
+  await fetch("https://v-point.000webhostapp.com/test/AnonFileUpload/api/anonDirectDownloadLink.php?link="+url)
    .then(data=>{ return data.json()})
    .then(data=>{
   document.getElementById(id).src = data.data;
